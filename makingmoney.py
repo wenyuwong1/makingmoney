@@ -2,7 +2,7 @@
 """
 Author : wwong3
 Date   : 2019-04-22
-Purpose: Rock the Casbah
+Purpose: Calculate Wage based on Military Time-In/Time-Out
 """
 
 import argparse
@@ -35,7 +35,7 @@ def get_args():
     parser.add_argument(
         '-w',
 	'--wage',
-        help='The wage a person earns (ie: 9.25)',
+        help='Hourly wage (ie: 9.25)',
         metavar='float',
         type=float,
         default=8.0)
