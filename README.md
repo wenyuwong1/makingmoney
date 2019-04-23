@@ -1,10 +1,10 @@
 # Calculating Hourly Wage with Military Time-In/Time-Out
 
-Write a Python program called `makingmoney.py` that takes exactly two optional `-s` start time and `-e` end time arguments which should be two military time stamp values representing start and end time of a work shift. Set both arguments to `required=True`. The program should also accept a `-w|--wage` option (float) which is the wage amount that the person will be earning (default:8.0).
+Write a Python program called `makingmoney.py` that takes exactly two optional `-s` start time and `-e` end time arguments which should be two military time stamp values (24-hour time) representing start and end time of a work shift. Set both arguments to `required=True`. The program should also accept a `-w|--wage` option (float) which is the wage amount that the person will be earning (default:8.0).
 
-If both the start and end time is given, calculate the hour wage that the person will be earning. Print a statement indicating their start and end time, a statement of how long they worked, and the total amount of money earned. 
+If both the start and end time is given, calculate the total wage that the person will be earning. Print a statement indicating their start and end time, a statement of how long they worked, and the total amount of money earned. 
 
-If either start or end time is not given in military format, print an error message.
+If either start or end time is not given in military format (24-hour time), print an error message.
 
 # Expected Behavior
 
