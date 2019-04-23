@@ -64,3 +64,7 @@ test.py::test_ok2 PASSED                                                        
 
 =========================== 7 passed in 2.94 seconds ===========================
 ````
+
+# Author
+
+Wen Yu (Amy) Wong <wwong3@email.arizona.edu>
