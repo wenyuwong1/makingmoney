@@ -1,4 +1,4 @@
-!/usr/bin/env python3
+#!/usr/bin/env python3
 """tests for makingmoney.py"""
 
 from subprocess import getstatusoutput, getoutput

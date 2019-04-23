@@ -57,27 +57,27 @@ def die(msg='Something bad happened'):
 # --------------------------------------------------
 def main():
 	"""Make a jazz noise here"""
-        args = get_args()
-        start = str(args.start)
-        end = str(args.end)
-        wage = args.wage
+	args = get_args()
+	start = str(args.start)
+	end = str(args.end)
+	wage = args.wage
 
 
         # convert user input to datetime instances
-        start_t=datetime.time(hour=int(start[0:2]), minute=int(start[3:5]))
-        end_t = datetime.time(hour=int(end[0:2]), minute=int(end[3:5]))
-        delta_t = datetime.timedelta(
+	start_t=datetime.time(hour=int(start[0:2]), minute=int(start[3:5]))
+	end_t = datetime.time(hour=int(end[0:2]), minute=int(end[3:5]))
+	delta_t = datetime.timedelta(
                 hours = (end_t.hour - start_t.hour),minutes = (end_t.minute - start_t.minute))
 
-        hours=(delta_t.seconds/3600)
+	hours=(delta_t.seconds/3600)
 
         # calculating wage
-        amt = hours* wage
+	amt = hours* wage
 
         # output
-        print('You started at {} and ended at {}'.format(start_t, end_t))
-        print('You worked for {} hours'.format(delta_t))
-        print('You earned ${0:.2f}'.format(round(amt, 2)))
+	print('You started at {} and ended at {}'.format(start_t, end_t))
+	print('You worked for {} hours'.format(delta_t))
+	print('You earned ${0:.2f}'.format(round(amt, 2)))
 
 
 # --------------------------------------------------
