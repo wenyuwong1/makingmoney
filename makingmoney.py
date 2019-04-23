@@ -41,8 +41,6 @@ def get_args():
         default=8.0)
 
     return parser.parse_args()
-
-
 # --------------------------------------------------
 def warn(msg):
     """Print a message to STDERR"""
@@ -63,6 +61,8 @@ def main():
         start = str(args.start)
         end = str(args.end)
         wage = args.wage
+
+
         # convert user input to datetime instances
         start_t=datetime.time(hour=int(start[0:2]), minute=int(start[3:5]))
         end_t = datetime.time(hour=int(end[0:2]), minute=int(end[3:5]))
@@ -83,5 +83,4 @@ def main():
 # --------------------------------------------------
 if __name__ == '__main__':
     main()
-
 
