@@ -1,8 +1,8 @@
 .PHONY: doc test
 
 doc:
-    	pandoc README.md -o README.pdf
+	pandoc README.md -o README.pdf
 
 test:
-     	pytest -v test.py
+	pytest -v test.py
 
